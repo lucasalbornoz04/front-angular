@@ -1,0 +1,13 @@
+/* header{
+    border-radius: 25px;
+}  */
+h1{
+    -webkit-text-stroke: 0.2vmin white;
+}
+p{
+    -webkit-text-stroke: 0.09vmin white;
+}
+.img-fluid{
+    width: 150x;
+    height:150px;
+}
