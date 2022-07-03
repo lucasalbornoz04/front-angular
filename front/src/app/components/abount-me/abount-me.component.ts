@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./abount-me.component.css']
 })
 export class AbountMeComponent implements OnInit {
+
   title:string = 'Acerca de Mí';
 
   constructor() { }
