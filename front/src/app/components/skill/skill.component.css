@@ -1,0 +1,14 @@
+section{
+    background-color: rgb(202, 206, 209);
+    margin: 1em;
+    border-radius: 1em;
+}
+.row{
+    margin:1em;
+    padding: 1em;
+}
+
+h4{
+    display: flex;
+    justify-content: space-evenly;
+}
