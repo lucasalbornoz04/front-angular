@@ -1,0 +1,23 @@
+section{
+    background-color: rgb(202, 206, 209);
+    margin: 1em;
+    border-radius: 1em;
+}
+h3{
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    border-radius:20px;
+}
+a{
+    text-decoration: none ;
+}
