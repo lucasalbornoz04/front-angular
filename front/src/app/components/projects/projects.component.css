@@ -8,16 +8,6 @@ h3{
     display: flex;
     justify-content: center;
 }
-.card{
-    margin: 3em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-    border-radius:20px;
-}
 a{
     text-decoration: none ;
 }

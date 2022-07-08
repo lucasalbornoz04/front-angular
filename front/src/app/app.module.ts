@@ -8,6 +8,7 @@ import { AbountMeComponent } from './components/abount-me/abount-me.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AbountMeComponent,
     EducationComponent,
     SkillComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
