@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Persona } from 'src/app/model/persona';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-abount-me',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbountMeComponent implements OnInit {
 
-  title:string = 'Acerca de Mí';
+  persona: Persona[] = [];
 
-  constructor() { }
+  constructor(private personaS: PersonaService) { }
 
   ngOnInit(): void {
   }
