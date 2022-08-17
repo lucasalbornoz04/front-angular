@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
