@@ -3,3 +3,16 @@ section{
     margin: 1em;
     border-radius: 1em;
 }
+
+.img-fluid{
+    width: 150x;
+    height:150px;
+    margin-left: 2em;
+    border-radius: 2em;
+}
+h4{
+    margin-left: 1em;
+}
+p{
+    margin-left: 2em;
+}

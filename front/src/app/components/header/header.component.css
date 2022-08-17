@@ -1,13 +1,7 @@
-/* header{
-    border-radius: 25px;
-}  */
-/* h1{
-    -webkit-text-stroke: 0.1vmin white;
-}
-p{
-    -webkit-text-stroke: 0.01vmin white;
-} */
-.img-fluid{
-    width: 150x;
-    height:150px;
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', ;
+    font-size: 50px;
+    color: white;
+    margin-top: 4em;
+    -webkit-text-stroke: 0.15vmin black;
 }
