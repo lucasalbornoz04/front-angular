@@ -3,7 +3,7 @@ export class NuevoUsuario {
     nombreUsuario!: string;
     email!: string;
     password!: string;
-    authorities!: String[];
+    authorities!: string[];
 
 
 }
