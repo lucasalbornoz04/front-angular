@@ -15,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { EditAbountMeComponent } from './components/abount-me/edit-abount-me.component';
+import { NewAbountMeComponent } from './components/abount-me/new-abount-me.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { interceptorProvider } from './service/interceptor-service';
     ProjectsComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    EditAbountMeComponent,
+    NewAbountMeComponent
   ],
   imports: [
     BrowserModule,

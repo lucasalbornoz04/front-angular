@@ -12,12 +12,12 @@ export class PersonaService {
 
   constructor(private httpClient : HttpClient) { }
 
-  public Lista(): Observable<Persona[]>{
+  public lista(): Observable<Persona[]>{
     return this.httpClient.get<Persona[]>(this.URL+'lista');
   }
 
-  public details(id: number): Observable<Persona>{
-    return this.httpClient.get<Persona>(this.URL+`details/${id}`);
+  public detail(id: number): Observable<Persona>{
+    return this.httpClient.get<Persona>(this.URL+`detail/${id}`);
   }
 
   public save(persona: Persona): Observable<any>{
