@@ -1,13 +1,13 @@
 <section class="py-5" >
     <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/agregar" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark" routerLink="/create" *ngIf="isLogged">
             Agregar perfil
         </button>
     </div>
     <div class="container-fluid" *ngForm="let persona of pers">
         <div class="row" >
             <div class="col-md-4 px-5 py-4 text-center">
-                <img src={{persona.urlImg}} class="img-fluid rounded-circle mb-4" id="fotodeperfil">     
+                <img src={{persona.urlImg}} class="img-fluid rounded-circle mb-4" id="urlImg">     
                 <h4 class="fw-bold mt-3" id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
                 <h6>{{persona.titulo}}</h6>  
             </div>

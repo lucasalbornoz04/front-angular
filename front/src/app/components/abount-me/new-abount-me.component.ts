@@ -12,8 +12,8 @@ export class NewAbountMeComponent implements OnInit {
   nombre: string ='';
   apellido: string ='';
   titulo: string ='';
-  urlImg: string ='';
   descripcion: string ='';
+  urlImg: string ='';
 
   constructor(private personaS: PersonaService, private router: Router) { }
 

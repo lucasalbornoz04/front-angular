@@ -18,7 +18,6 @@ export class AbountMeComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarPersona();
-
     if(this.tokenService.getToken()){
       this.isLogged = true;
     } else {
