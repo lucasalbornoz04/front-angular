@@ -29,3 +29,7 @@ p{
     border-radius: 100%;
     box-shadow: 1px 1px 10px rgb(128, 128, 128);
 }
+
+.add-button{
+    margin-right: 2em;
+}
