@@ -9,11 +9,34 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-abount-me.component.css']
 })
 export class EditAbountMeComponent implements OnInit {
+  per: Persona = null;
   constructor(private personaS: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
+
   ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.personaS.detail(id).subscribe(
+      data =>{
+        this.per = data;
+      }, err => {
+        alert ('Error al editar el perfil')
+        this.router.navigate(['']);
+      }
+    )
   }
 
+  onUpdate(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.personaS.update(id, this.per).subscribe(
+      data => {
+        this.router.navigate(['']);
+      }, err => {
+        alert ("Error al editar perfil");
+        this.router.navigate(['']);
+      }
+    )
+
+  }
   
 
 }

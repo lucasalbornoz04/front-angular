@@ -1,6 +1,6 @@
 <section class="py-5" >
     <div class="col-12 text-end">
-        <button type="button" class="btn btn-dark add-button" routerLink="/create" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark add-button" routerLink="/createPer" *ngIf="isLogged">
             Agregar perfil
         </button>
     </div>
@@ -15,6 +15,15 @@
             <div class="col-md-7 p-5">
                     <h3 class="fw-bold">Acerca de mí</h3>
                     <p>{{persona.descripcion}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
+                    <button type="button" class="btn btn-dark" routerLink="/editPer/{{persona.id}}">
+                        Editar perfil
+                    </button>
+                </div> 
             </div>
         </div>
     </div>

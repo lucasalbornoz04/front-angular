@@ -1,27 +1,27 @@
-<!-- <div class="container" *ngIf="pers">
+<div class="container" *ngIf="per">
     <div class="row">
         <div>
             <h1>Editar datos personales</h1>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreP">Nombre</label>
-                    <input type="text" class="form-control mb-2" id="nombre" name="nombre" [(ngModel)]="pers.nombre" required>
+                    <input type="text" class="form-control mb-2" id="nombre" name="nombre" [(ngModel)]="per.nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="apellidoP">Apellido</label>
-                    <input type="text" class="form-control mb-2" id="apellido" name="apellido" [(ngModel)]="pers.apellido" required>
+                    <input type="text" class="form-control mb-2" id="apellido" name="apellido" [(ngModel)]="per.apellido" required>
                 </div>
                 <div class="form-group">
                     <label for="tituloP">Título</label>
-                    <input type="text" class="form-control mb-2" id="titulo" name="titulo" [(ngModel)]="pers.titulo" required>
+                    <input type="text" class="form-control mb-2" id="titulo" name="titulo" [(ngModel)]="per.titulo" required>
                 </div>
                 <div class="form-group">
                     <label for="descP">Descripción</label>
-                    <input type="text" class="form-control mb-2" id="desc" name="descripcion" [(ngModel)]="pers.descripcion" required>
+                    <input type="text" class="form-control mb-2" id="desc" name="descripcion" [(ngModel)]="per.descripcion" required>
                 </div>
                 <div class="form-group">
                     <label for="imgP">Imagen Personal</label>
-                    <input type="text" class="form-control mb-2" id="urlImg" name="urlImg" [(ngModel)]="pers.urlImg" required>
+                    <input type="text" class="form-control mb-2" id="urlImg" name="urlImg" [(ngModel)]="per.urlImg" required>
                 </div>  
                 <button class="btn btn-primary mb-2">Actualizar datos personales</button>
             </form>
@@ -29,4 +29,4 @@
         </div>
 
     </div>
-</div> -->
+</div>

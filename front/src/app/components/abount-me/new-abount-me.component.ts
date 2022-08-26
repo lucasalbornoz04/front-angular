@@ -21,8 +21,8 @@ export class NewAbountMeComponent implements OnInit {
   }
 
   onCreate(): void{
-    const pers = new Persona(this.nombre, this.apellido, this.titulo, this.descripcion, this.urlImg);
-    this.personaS.save(pers).subscribe(
+    const per = new Persona(this.nombre, this.apellido, this.titulo, this.descripcion, this.urlImg);
+    this.personaS.save(per).subscribe(
       data=>{
         alert("Persona agregada");
         this.router.navigate(['']);
