@@ -9,15 +9,15 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-abount-me.component.css']
 })
 export class EditAbountMeComponent implements OnInit {
-  per: Persona = null;
+  pers: Persona = null;
   constructor(private personaS: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaS.detail(id).subscribe(
+    this.personaS.details(id).subscribe(
       data =>{
-        this.per = data;
+        this.pers = data;
       }, err => {
         alert ('Error al editar el perfil')
         this.router.navigate(['']);
@@ -27,7 +27,7 @@ export class EditAbountMeComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaS.update(id, this.per).subscribe(
+    this.personaS.update(id, this.pers).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {
