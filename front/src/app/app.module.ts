@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { EditAbountMeComponent } from './components/abount-me/edit-abount-me.component';
 import { NewAbountMeComponent } from './components/abount-me/new-abount-me.component';
+import { NewEducationComponent } from './components/education/new-education.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NewAbountMeComponent } from './components/abount-me/new-abount-me.compo
     HomeComponent,
     LoginComponent,
     EditAbountMeComponent,
-    NewAbountMeComponent
+    NewAbountMeComponent,
+    NewEducationComponent
   ],
   imports: [
     BrowserModule,
