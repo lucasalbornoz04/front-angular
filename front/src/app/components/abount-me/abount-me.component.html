@@ -1,7 +1,7 @@
 <section class="py-5" >
     <div class="col-12 text-end">
         <button type="button" class="btn btn-dark add-button" routerLink="/createPersona" *ngIf="isLogged">
-            Agregar perfil
+            <img src="../../../assets/svg/bxs-user-pin.svg" alt="" id="add-img">
         </button>
     </div>
     <div class="container-fluid" *ngFor="let persona of pers">
@@ -20,8 +20,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
-                    <button type="button" class="btn btn-dark" routerLink="/editPersona/{{persona.id}}">
-                        Editar perfil
+                    <button type="button" class="btn btn-dark edit-button" routerLink="/editPersona/{{persona.id}}">
+                        <img src="../../../assets/svg/bxs-edit-alt.svg" alt="">
                     </button>
                 </div> 
             </div>
