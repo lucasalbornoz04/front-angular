@@ -9,6 +9,14 @@ h3{
     display: flex;
     justify-content: center;
 }
+
+#btn-agregar{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    padding-right: 2em;
+}
+
 li{
     background-color: rgb(191, 185, 185);
     border-radius:1rem;
@@ -16,3 +24,11 @@ li{
     margin: 2em;
 }
 
+#btns{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+}
+.btn{
+    margin-bottom: 0.5em;
+}

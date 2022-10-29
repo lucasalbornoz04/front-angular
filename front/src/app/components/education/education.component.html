@@ -1,8 +1,8 @@
 <section>
   <div class="row">
     <h3>Education</h3>
-    <div class="col-lg-2">
-      <button type="button" class="btn btn-dark" routerLink="/nuevaEdu">
+    <div class="col-lg-12" id="btn-agregar">
+      <button type="button" class="btn btn-dark float-right"  routerLink="/nuevaEdu" *ngIf="isLogged">
         Agregar Educacion
       </button>
     </div>
@@ -11,7 +11,10 @@
             <img src="{{Educacion.logoEdu}}" alt="" srcset="">
             <h4>{{Educacion.nombreEdu}}</h4>
             <span class="badge bg-primary rounded-pill">{{(Educacion.fechaEdu)}}</span>
-            <div *ngIf="isLogged">
+            <div id="btns" *ngIf="isLogged">
+              <button class="btn btn-info" routerLink="/editEducacion/{{Educacion.id}}">
+                  <img src="../../../assets/svg/bxs-edit-alt.svg" alt="">
+              </button>
               <button class="btn  btn-danger" (click)="delete(Educacion.id)">
                 <img src="../../../assets/svg/bx-x.svg" alt="">
               </button>
