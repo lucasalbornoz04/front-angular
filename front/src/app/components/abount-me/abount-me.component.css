@@ -16,3 +16,26 @@ h4{
 p{
     margin-left: 2em;
 }
+.add-button{
+    margin-right: 1em;
+}
+
+.edit-persona-btn{
+    position: absolute;
+    top: 36.5rem;
+    right: 2rem;
+}
+
+
+@media (max-width: 768px)and (min-width:538px){ 
+    .add-button{
+        font-size: 10px;
+    }
+    .edit-persona-bt{
+        position: relative;
+    }
+    .edit-button{
+        font-size: 10px;
+        margin-left: 8em;
+    }
+}

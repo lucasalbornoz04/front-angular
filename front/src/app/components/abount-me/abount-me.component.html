@@ -1,26 +1,30 @@
-<section class="py-5">
-    <div class="container-fluid">
+<section class="py-5" >
+    <div class="col-12 text-end">
+        <button type="button" class="btn btn-dark add-button" routerLink="/createPersona" *ngIf="isLogged">
+            <img src="../../../assets/svg/bxs-user-pin.svg" alt="" id="add-img">
+        </button>
+    </div>
+    <div class="container-fluid" *ngFor="let persona of pers">
         <div class="row" >
             <div class="col-md-4 px-5 py-4 text-center">
-                <img src="../../../assets/perfil.png" class="img-fluid rounded-circle mb-4" id="fotodeperfil">     
-                <h4 class="fw-bold mt-3" id="nombre">persona apellido</h4>
-                <h6>titulo</h6>  
+                <img src={{persona.urlImg}} class="img-fluid rounded-circle mb-4" id="urlImg">     
+                <h4 class="fw-bold mt-3" id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
+                <h6>{{persona.titulo}}</h6>  
             </div>
     
             <div class="col-md-7 p-5">
                     <h3 class="fw-bold">Acerca de mí</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos laudantium, aut tenetur non numquam ab sapiente aliquam quo reiciendis laboriosam consequatur. Dignissimos numquam vel placeat quisquam, eum maiores voluptate reiciendis?</p>       
+                    <p>{{persona.descripcion}}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="edit-persona-btn text-end"> 
-                    <button type="button" class="btn btn-dark">
-                        <i class="bi bi-pencil-fill"></i>
+                <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
+                    <button type="button" class="btn btn-dark edit-button" routerLink="/editPersona/{{persona.id}}">
+                        <img src="../../../assets/svg/bxs-edit-alt.svg" alt="">
                     </button>
                 </div> 
             </div>
         </div>
-    
     </div>
 </section>

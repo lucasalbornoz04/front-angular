@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre del developer</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido del developer</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">titulo del developer</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="urlImg">Foto de perfil</label>
+                    <input type="text" class="form-control" id="urlImg" name="urlImg" [(ngModel)]="urlImg" required>
+                </div>
+                <button class="btn btn-info">Agregar perfil</button>
+            </form>
+        </div>
+    </div>
+</div>
