@@ -32,3 +32,20 @@ li{
 .btn{
     margin-bottom: 0.5em;
 }
+
+@media screen and (max-width: 425px){
+    #ocultar-nombre{
+        display:none;
+    }
+    #btns{
+        width: 20px;
+        height: 20px;
+        margin-left: 1em;
+    }
+    #img-btn{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        right: 0.5rem;
+    }
+}
