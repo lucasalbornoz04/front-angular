@@ -2,10 +2,20 @@
     <div class="container-fluid">
         <div class="row">
             <h3>Hard & Soft Skill</h3>
-            <div class="col-sm-12 col-md-3"><h4>An item</h4></div>
-            <div class="col-sm-12 col-md-3"><h4>A second item</h4></div>
-            <div class="col-sm-12 col-md-3"><h4>A third item</h4></div>
-            <div class="col-sm-12 col-md-3"><h4>A fourth item</h4></div>
+            <div class="col-lg-12">
+                <button type="button" routerLink="/nuevaSkill" class="btn btn-dark add" *ngIf="isLogged"><img src="../../../assets/svg/icons8-más-24.svg" alt="" srcset=""></button>
+            </div>
+            <div *ngFor="let skill of skill" class="col-lg-3">
+            <div class="col-sm-12 col-md-3"  ><img src="{{skill.urlSkill}}" alt="{{skill.nombreSkill}}" id="skill"></div>
+                <div id="btns" *ngIf="isLogged">
+                    <button class="btn btn-info" routerLink="/editSkill/{{skill.id}}" id="btn-edit">
+                        <img src="../../../assets/svg/bxs-edit-alt.svg" alt="Edit">
+                    </button>
+                    <button class="btn btn-danger" (click)="delete(skill.id)" id="btn-delete">
+                    <img src="../../../assets/svg/bx-x.svg" alt="Delete">
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

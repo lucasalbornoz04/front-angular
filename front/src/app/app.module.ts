@@ -18,6 +18,11 @@ import { interceptorProvider } from './service/interceptor-service';
 import { EditAbountMeComponent } from './components/abount-me/edit-abount-me.component';
 import { NewAbountMeComponent } from './components/abount-me/new-abount-me.component';
 import { NewEducationComponent } from './components/education/new-education.component';
+import { EditEducationComponent } from './components/education/edit-education.component';
+import { EditSkillComponent } from './components/skill/edit-skill.component';
+import { NewSkillComponent } from './components/skill/new-skill.component';
+import { NewProjectComponent } from './components/projects/new-project.component';
+import { EditProjectComponent } from './components/projects/edit-project.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { NewEducationComponent } from './components/education/new-education.comp
     LoginComponent,
     EditAbountMeComponent,
     NewAbountMeComponent,
-    NewEducationComponent
+    NewEducationComponent,
+    EditEducationComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    NewProjectComponent,
+    EditProjectComponent
   ],
   imports: [
     BrowserModule,

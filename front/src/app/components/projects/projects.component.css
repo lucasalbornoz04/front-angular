@@ -11,3 +11,16 @@ h3{
 a{
     text-decoration: none ;
 }
+#btn-agregar{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+.row{
+    margin: 1em;
+    padding-bottom: 2em;
+}
+li{
+    background-color: rgb(188, 197, 206);
+}

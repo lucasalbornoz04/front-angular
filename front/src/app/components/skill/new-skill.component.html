@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="urlSkill">Skill</label>
+                <input type="text" class="form-control" id="urlSkill" name="urlSkill" [(ngModel)]="urlSkill" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreSkill">Nombre de skill</label>
+                <input type="text" class="form-control" id="nombreSkill" name="nombreSkill" [(ngModel)]="nombreSkill" required>
+            </div>
+            <button class="btn btn-info">Agregar skill</button>
+        </form>
+    </div>
+</div>
