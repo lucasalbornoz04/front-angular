@@ -12,7 +12,7 @@
             <h4 id="ocultar-nombre">{{Educacion.nombreEdu}}</h4>
             <span class="badge bg-primary rounded-pill">{{(Educacion.fechaEdu)}}</span>
             <div id="btns" *ngIf="isLogged">
-              <button class="btn btn-info" routerLink="/editEducacion/{{Educacion.id}}">
+              <button class="btn btn-info" routerLink="/editEdu/{{Educacion.id}}">
                   <img src="../../../assets/svg/bxs-edit-alt.svg" alt="Edit" id="img-btn">
               </button>
               <button class="btn btn-danger" (click)="delete(Educacion.id)">
