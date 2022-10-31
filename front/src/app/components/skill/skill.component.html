@@ -6,7 +6,7 @@
                 <button type="button" routerLink="/nuevaSkill" class="btn btn-dark add" *ngIf="isLogged"><img src="../../../assets/svg/icons8-más-24.svg" alt="" srcset=""></button>
             </div>
             <div *ngFor="let skill of skill" class="col-lg-3">
-            <div class="col-sm-12 col-md-3"  ><img src="{{skill.urlSkill}}" alt="{{skill.nombreSkill}}" id="skill"></div>
+            <div class="col-md-3"  ><img src="{{skill.urlSkill}}" alt="{{skill.nombreSkill}}" id="skill"></div>
                 <div id="btns" *ngIf="isLogged">
                     <button class="btn btn-info" routerLink="/editSkill/{{skill.id}}" id="btn-edit">
                         <img src="../../../assets/svg/bxs-edit-alt.svg" alt="Edit">

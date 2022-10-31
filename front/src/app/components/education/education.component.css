@@ -32,7 +32,7 @@ li{
 .btn{
     margin-bottom: 0.5em;
 }
-@media screen and (max-width: 660px), screen and (min-width: 475){
+@media screen and (max-width: 660px), screen and (min-width: 475px){
     h4{
         margin-left: 1em;
     }
@@ -50,6 +50,6 @@ li{
         width: 20px;
         height: 20px;
         position: relative;
-        right: 0.5rem;
+        right: 0.6em;
     }
 }

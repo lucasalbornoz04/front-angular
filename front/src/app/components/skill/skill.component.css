@@ -51,3 +51,35 @@ h3{
     bottom: 0.7rem;
 }
 
+@media (max-width:990px) {
+    #skill{
+        position: relative;
+        left:50%;
+    }
+    #btn-edit{
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: 50%;
+    }
+    #btn-edit > img{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        bottom: 0.8rem;
+    }
+    
+    #btn-delete{
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: 50%;
+    }
+    #btn-delete > img{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        bottom: 0.7rem;
+    }
+
+}
